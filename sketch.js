@@ -61,11 +61,11 @@ function draw() {
     
   zombie.setCollider("rectangle",0,0.9224,220,400)
   
-  if(touches.length>0||keyDown("space")){
+  if(touches.length>0||keyDown("space") && >=480){
     zombie.velocityY=-10;
     touches=[];
   }
-  zombie.velocityY=zombie.velocityY+0.9;
+  zombie.velocityY=zombie.velocityY+0.3;
   spawncactus();
   spawnbrain();
   spawnstone();
